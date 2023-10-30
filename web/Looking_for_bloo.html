@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>e-RaktKosh</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+      <a href="http://localhost:9494/Blood/"><img src="Rakt5.png"></a>
+     
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            
+          <a class="nav-link active" aria-current="page" href="Looking_for_bloo.html">Looking for Blood</a>
+            
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="BloodAvailability.html">Blood Availability</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="checkForDonar.html">Check for Donar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about_Blood_donation.html">About blood donation</a>
+        </li>
+        
+      </ul>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Login
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="donarLogin.html">Wants to Donate</a></li>
+            <li><a class="dropdown-item" href="bookRegistration.html">Book a slot for donation</a></li>
+            
+          </ul>
+        </li>
+        
+        
+    </div>
+  </div>
+</nav>
+      <!--navbarend-->
+      <br>
+      <br>
+      
+      <div class="container" style="border: 1px red">
+          <h4 style="color: red">Blood Stock Availability</h4>
+          <br>
+          <h6 style="color: red">Search Blood Stock</h6>
+          
+          
+          <div class="container text-center">
+              <form action="BloodOutput.jsp" method="post">
+              
+  <div class="row" style="border: 1px red">
+    <div class="col-4">
+        
+            
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example" name="state">
+                <option value="Andhra Pradesh">Select State</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Arunachal Pradesh">Arunachals Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                
+                
+                
+            </select>
+       
+    </div>
+    <div class="col-4">
+        
+           
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example" name="district">
+                <option selected >Select District</option>
+                <optgroup label="Andhra Pradesh">
+                    <option value="Anakapalli">Anakapalli</option>
+                    <option value="Anantapur">Anantapur</option>
+                    <option value="Annamayya">Annamayya</option>
+                    <option value="Bapatla">Bapatla</option>
+                    <option value="chittoor">chittoor</option>
+                </optgroup>
+                <optgroup label="Arunachals Pradesh">
+                    <option value="Changlang">Changlang</option>
+                    <option value="Dibang Valley">Dibang Valley</option>
+                    <option value="East Kameng">East Kamengv</option>
+                    <option value="East Siang">East Siang</option>
+                    <option value="Kurung Kumey">Kurung Kumey</option>
+                </optgroup>
+                <optgroup label="Assam">
+                    <option value="Barpeta">Barpeta</option>
+                    <option value="Bishwanath">Bishwanath</option>
+                    <option value="Bongaigaon">Bongaigaon</option>
+                    <option value="Cachar">Cachar</option>
+                    <option value="Charaideo">Charaideo</option>
+                </optgroup>
+                 <optgroup label="Bihar">
+                    <option value="West Champaran">West Champaran</option>
+                    <option value="Siwan">Siwan</option>
+                    <option value="Patna">Patna</option>
+                    <option value="Nawada">Nawada</option>
+                    <option value="East Champaran">East Champaran</option>
+                </optgroup>
+                 <optgroup label="Chhattisgarh">
+                    <option value="Sakti">Sakti</option>
+                    <option value="Jashpur">Jashpur</option>
+                    <option value="Bemetara">Bemetara</option>
+                    <option value="Sukma">Sukma</option>
+                    <option value="Dhamtari">Dhamtari</option>
+                </optgroup>
+                <optgroup label="Madhya Pradesh">
+                    <option value="Bhopal">Bhopal</option>
+                    <option value="Raisen">Raisen</option>
+                    <option value="Rajgarh">Rajgarh</option>
+                    <option value="Gwalior">Gwalior</option>
+                    <option value="Vidisha">Vidisha</option>
+                </optgroup>
+                <optgroup label="Maharashtra">
+                    <option value="Ahmednagar">Ahmednagar</option>
+                    <option value="Akola">Akola</option>
+                    <option value="Amravati">Amravati</option>
+                    <option value="Aurangabad">Aurangabad</option>
+                    <option value="Beed">Beed</option>
+                </optgroup>
+            </select>
+       
+    </div>
+    <div class="col-3">
+            
+            
+            <select class="form-select form-select-lg mb-3" aria-label="Large select example" name="BGroup">
+                <option value="AB-Ve">Blood Group</option>
+                <option value="AB-Ve">AB-Ve</option>
+                <option value="AB+Ve">AB+Ve</option>
+                <option value="A-Ve">A-Ve</option>
+                <option value="A+Ve">A+Ve</option>
+                <option value="B-Ve">B-Ve</option>
+                <option value="B+Ve">B+Ve</option>
+                <option value="O-Ve">O-Ve</option>
+                <option value="O+Ve">O+Ve</option>
+            </select>
+        
+    </div>
+      <div class="col-1">
+          <button type="submit" class="btn btn-danger">Search</button>
+      </div>
+  </div>
+          </form>
+</div>
+          
+         
+      </div>
+      
+   
+       <!--caresol start-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="pic2.png" class="d-block w-100" alt="...">
+    </div>
+    
+    
+  </div>
+</div>
+       
+       
+      <!--caresol end-->
+      <!--search Box-->
+      
+    </body>
+</html>
